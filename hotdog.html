@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+       
+        <meta charset="utf-8" />
+        <meta name="author" content="Kyle Perona">
+        <meta name="description" content="Bakit sya tinawag na Hotdog kung lagi naman nasa Freezer?">
+        <title>Hotdog na Mainit</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="icon" href="hotdog.png">
+    </head>
+    <body>
+        <header>
+        <h1 style="color: rgb(10, 10, 10); font-size: 70px; text-align: center; background-image: url(images/bg-hotdog.jpeg); background-repeat: repeat-x; background-position: center;">
+           Hotdog Web
+        </h1>
+    </header>
+    <hr>
+        <div class="container">
+            <section>
+        <h2 style="color: rgb(165, 34, 34);">
+            This is My Hotdog
+        </h2>
+        <div>
+        <p style="color:black;">My hotdog is not just any regular hotdogs, I have small hotdog, big hotdog, long hotdog, circle hotdog and many more</p>
+    </div>
+        <br>
+        <table>
+            <caption>My Daily Hotdog Schedule</caption>
+            <thead>
+            <tr>
+                <th>Time</th>
+                <th>Hotdog Schedule</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <time datetime="08:00">8am</time>-<time datetime="11:00">11am</time>
+                </td>
+                <td>Big Hotdog</td>
+            </tr>
+            <tr>
+                <td>
+                    <time datetime="11:00">11am</time>-<time datetime="12:00">12pm</time>
+                </td>
+                <td>Long Hotdog</td>
+            </tr>
+            <tr>
+                <td>
+                    <time datetime="13:00">1pm</time>-<time datetime="15:00">3pm</time>
+                </td>
+                <td>Circle Hotdog</td>
+            </tr>
+            <tr>
+                <td rowspan="2">All Other Time</td>
+                <td colspan="2">Free Hotdog</td>
+            </tr>
+            <tr>
+                <td>Free Burger</td>
+            </tr>
+        </tbody>
+        </table>
+   
+        <figure>
+            <img src="images/hot-dog.gif" width="200" height="200" alt="hotdogmo">
+       <figcaption><em>Get the Hotdog Moving</em></figcaption>
+        </figure>
+            <details>
+                <summary>
+                    Kung ang Hotdog ay Malamig
+                </summary><p>Bakit walang Corn sa Corn Beef?</p>
+            </details>
+          
+            <aside>
+                <h2>Side-Hotdog</h2>
+                <ul>
+                    <li>Hotdog 1</li>
+                    <li>Hotdog 2</li>
+                    <li>Hotdog 3</li>
+                    <li>Hotdog 4</li>
+                </ul>
+                </aside>
+            </section>
+    </div>
+        <!---TBC
+        <ul> 
+            <li>Download this <a href="hotdog.png" download>Hello</a></li></ul>
+       --->
+        <hr>
+        <div class="container">
+        <h2 style="color: rgb(98, 53, 53); text-align: center;">
+            This is My Burger
+            <figure>
+                <img src="images/burger.gif" width="200" height="200" alt="burgerka">
+           <figcaption><i>Burger Ka Sakin</i></figcaption>
+            </figure>
+            </h2>
+        </div>
+           <hr>
+        <form action="https://httpbin.org/get"method="get">
+            <fieldset>
+                <legend>Personal Info:</legend>
+            <p>
+            <label for="firstName">First Name:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="YummyHotdogMyTummy" autocomplete="on" required>
+        </p>
+        <p>
+        <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" placeholder="BurgerFriesAtMilkTea" autocomplete="on" required>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="BurgerKaSakin" required>
+            </p>
+            <p>
+                <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="0000000000" pattern="[0-9]{10}" required>
+                </p>
+                <p>
+                    <label for="year">Birth Year</label>
+                    <input type="number" name="year" id="year" min="1970" max="2023" step="1" value="1970">
+                </p>
+                <!-- <p>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <select name="coffee" id="coffee" multiple size="5s">
+                        <optgroup label="Coffees">
+                        <option value="Regular Coffee">Regular Coffee</option>
+                        <option value="Latte">Latte</option>
+                    </optgroup>
+                    <optgroup label="Hotdog Drinks">
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Americano">Americano</option>
+                        <option value="Matcha">Matcha</option>
+                    </optgroup>
+                    </select>
+                </p> -->
+                <p>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <input name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <optgroup label="Coffees">
+                        <option value="Regular Coffee">Regular Coffee</option>
+                        <option value="Latte">Latte</option>
+                        <option value="Cappuccino">Cappuccino</option>
+                        <option value="Americano">Americano</option>
+                        <option value="Matcha">Matcha</option>
+                    </datalist>
+                    </select>
+                </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your Favorite Food:</legend>
+                    <p>
+                        <input type="radio" name="food" id="cheesedog" value="cheesedog">
+                        <label for="cheesedog">Cheese Dog</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="corndog" value="corndog">
+                            <label for="corndog">Corn Dog</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="food" id="partydog" value="partydog">
+                            <label for="partydog">Party Dog</label>
+                        </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you have Burger?</legend>
+                    <p>
+                        <input type="checkbox" name="burger" id="burger" value="burger">
+                        <label for="burger">Burger</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="burger" id="cheeseburger" value="cheeseburger">
+                        <label for="cheeseburger">Cheese Burger</label>
+                    </p><p>
+                        <input type="checkbox" name="burger" id="veganburger" value="veganburger">
+                        <label for="veganburger">Vegan Burger</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="burger" id="otherburger" value="otherburger">
+                        <label for="otherburger">Other Burger:</label>
+                        <input type="text" name="burger" id="otherburger" placeholder="BurgerKaSakin">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Send Me A Note</legend>
+                    <label for="message">Your Message</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Thank You For Hotdog"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+        </form>
+        </h3>
+        <hr>
+        &lt;&lt;&lt; &copy;<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Burger</a>&gt;&gt;&gt;
+        <p>
+            <a href="#">Back to Top</a>
+        </p>
+    </body>
+    </html>
